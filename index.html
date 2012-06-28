@@ -1,0 +1,83 @@
+<!--DOCTYPE HTML-->
+<meta charset="utf-8">
+
+<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/tipTip.css" />
+<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+
+<script type="text/javascript" src="include/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="include/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<body>
+<div id="main-window" class="general corners">
+	<div id="header">
+		<div id="logo">
+			<img align="left" id="logo-img" src="images/logo.png"/>
+			<div id="logo-text"><img src="images/logo-text.png"/></div><!--Клаб<span id="o">о</span>р</div-->
+		</div>
+		<div id="top-menu">
+			<div id="user-info">
+				<img id="user-avatar" src="images/user-avatar.png"/>
+			</div>
+			<div id="options">
+				<img id="options-button" src="images/options.png"/>
+			</div>
+		</div>
+	</div>
+	<div id="content" class="general">
+		<div id="menu">
+			<div>
+				<h3><a href="#">Быстрая игра</a></h3>
+				<div>
+					<button id="one-deal">Одна раздача</button>
+					<button id="one-match">Одна партия</button>
+				</div>
+			</div>
+			<div>
+				<h3><a href="#">Фильтр</a></h3>
+				<div>
+					<div>Режим игры</div>
+					<div id="game-mode">
+						<input id="two-players-cb" type="checkbox"/><label for="two-players-cb">2 игрока</label>
+						<input id="three-players-cb" type="checkbox"/><label for="three-players-cb">3 игрока</label>
+						<input id="four-players-cb" type="checkbox"/><label for="four-players-cb">4 игрока</label>
+						<input id="pairs-game-cb" type="checkbox"/><label for="pairs-game-cb">На пары</label>
+					</div>
+					<div>Лимит партии</div>
+					<div id="scores-limit"></div>
+					<div id="scores-limit-label">500-5000 очков</div>
+					<!--table id="game-rules">
+						<thead>
+							<div>
+								Количество игроков
+							</div>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input id="two-players-cb" checked="true" type="checkbox"/></td><td><label for="two-players-cb">2</label></td>
+							</tr>
+							<tr>
+								<td><input id="three-players-cb" checked="true" type="checkbox"/></td><td><label for="three-players-cb">3</label></td>
+							</tr>
+							<tr>
+								<td><input id="four-players-cb" checked="true" type="checkbox"/></td><td><label for="four-players-cb">4</label></td>
+							</tr>
+							<tr>
+								<td><input id="pairs-game-cb" checked="true" type="checkbox"/></td><td><label for="pairs-game-cb">0</label></td>
+							</tr>
+						</tbody>
+					</table-->
+					<button id="start-game-button">Начать игру</button>
+				</div>
+			</div>
+		</div>
+		<div id="game-demo" class="content">
+			ВИДЕО
+		</div>
+	</div>
+	<div id="footer" class="">
+		Игры игрока: <div id="player-games">2</div>
+	</div>
+</div>
+</body>

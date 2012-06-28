@@ -1,0 +1,110 @@
+#user-info, #logo, #logo-text,
+#top-menu, #user-info,
+#options, #footer, #footer #player-games,
+#menu, #game-demo {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*div {
+	padding: 0px;
+	margin: 0px;
+	margin-right: -5px;
+	border: 0px;
+} */
+
+#main-window {
+	width: 800px;
+	height: 600px;
+}
+
+/* header start */
+
+	#header {
+		width: 100%;
+		height: 123px;
+	}
+	#user-info {
+		width: 120px;
+		height: 120px;
+	}
+	#user-avatar {
+		max-width: 120px;
+		max-height: 120px;
+	}
+	#logo {
+		width: 549px;
+		text-align: left;
+	}
+	#logo-text {
+		font-size: 72px;
+		font-weight: bold;
+	}
+	#logo-img {
+		max-width: 150px;
+		max-height: 120px;
+	}
+	#options-button {
+		max-width: 120px;
+		max-height: 120px;
+	}
+	
+/* header end */
+
+#content {
+	width: 99.8%;
+	height: 455px;
+}
+
+#menu {
+	text-align: center;
+	height: 100%;
+	width: 30%;
+	/*position: absolute;
+	left: 10px;
+	top: 250px;
+	width: 200px;*/
+}
+
+/*#start-game-button {
+	width: 100%;
+	height: 50px;
+	background-color: #0f0;
+	font-size: 30px;
+	font-family: Comic Sans MS;
+}
+*/
+#game-rules {
+	width: 100%;
+}
+#game-rules tr {
+}
+
+#game-demo {
+	height: 99.2%;
+	width: 69.2%;
+	margin-top: 1px;
+	vertical-align: top;
+}
+
+#footer {
+	width: 100%;
+	height: 20px;
+	vertical-align: bottom;
+}
+
+#footer #player-games {
+	color: blue;
+}
+
+/* tables */
+
+.player-table {
+	position: absolute;
+	border: solid 1px #0ff;
+}
+
+.player-cards {
+	position: relative;
+	border: solid 1px #f0f;
+}
