@@ -7,7 +7,6 @@ var _globalOptions = {
 	userOptions: {
 		minScores: 500,
 		maxScores: 500,
-		
 	},
 };
 

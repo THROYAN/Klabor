@@ -6,7 +6,7 @@ $(function() {
 			height: 100,
 			left: 100,
 			top: 100,
-			angle: 90,
+			angle: 0,
 		},
 		{
 			width: 300,
@@ -20,14 +20,14 @@ $(function() {
 			height: 100,
 			left: 100,
 			top: 300,
-			angle: 180,
+			angle: 0,
 		},
 		{
 			width: 300,
 			height: 100,
 			left: 400,
 			top: 300,
-			angle: 270,
+			angle: 0,
 		},
 	];
 	
@@ -42,7 +42,7 @@ $(function() {
 							'</div>' +
 							'<div id="center' + i + '"></div>' +
 						'</div>');
-		$('body').append($plTable);
+		$('#tables-container').append($plTable);
 		
 		var plTable = playersTables[i];
 		$plTable.width( plTable.width )
