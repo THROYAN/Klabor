@@ -1,12 +1,12 @@
-$(function() {
+$(function() { // при загрузке страницы
 
-	var playersTables = [
+	var playersTables = [ // настройки столов
 		{
 			width: 300,
 			height: 100,
 			left: 100,
 			top: 100,
-			angle: 90,
+			angle: 0,
 		},
 		{
 			width: 300,
@@ -20,14 +20,14 @@ $(function() {
 			height: 100,
 			left: 100,
 			top: 300,
-			angle: 180,
+			angle: 0,
 		},
 		{
 			width: 300,
 			height: 100,
 			left: 400,
 			top: 300,
-			angle: 270,
+			angle: 0,
 		},
 	];
 	
@@ -41,22 +41,22 @@ $(function() {
 								'АВА' +
 							'</div>' +
 							'<div id="center' + i + '"></div>' +
-						'</div>');
-		$('body').append($plTable);
+						'</div>'); // если в $ передать html тэги, то он их типа создаст. если ты напишешь $('div'), он вернёт все div'ы
+		$('#tables-container').append($plTable); // вот здесь он тулит на саму страничку, точнее внутрь #tables-container 
 		
 		var plTable = playersTables[i];
-		$plTable.width( plTable.width )
+		$plTable.width( plTable.width ) // устанавливаем всякие настройки
 				.height( plTable.height )
 				.offset({
 					left: plTable.left,
 					top: plTable.top,
 				})
-				.rotate( plTable.angle )
+				.rotate( plTable.angle ) // даже крутим
 				;
 		
-		plTable.timer = setInterval( function($plTable, i) {
-			$plTable.rotate(parseFloat($plTable.rotate()) + 3);
-			$plTable.qtip('reposition');
+		plTable.timer = setInterval( function($plTable, i) { // setInterval - это такой таймер специальный. на http://javascript.ru/setInterval
+			$plTable.rotate(parseFloat($plTable.rotate()) + 3); // тут мы крутим столы
+			$plTable.qtip('reposition'); // qtip - плагин для тултипчиков (подсказок, облачков)
 			$('#center' + i).css({
 				position: 'inherit',
 				left: $plTable.width() / 2 - 1,
@@ -68,8 +68,8 @@ $(function() {
 		}, 10, $plTable, i);
 	}
 	
-	$('.player-table').each(function(i, e) {
-		$(e).qtip({
+	$('.player-table').each(function(i, e) { // each - это как цикл по элементам (типа foreach). i - индекс, e - элемент. еще можно this использовать, это тоже элемент 
+		$(e).qtip({ // тут всякие настройки. и да, если в $ передать объект HTML (DOM), то он вернёт JQuery объект с ним
 			id: e.id + '-message',
 			content: 'СООБЩЕНЬИЦЕ',
 			show: {
@@ -96,7 +96,7 @@ $(function() {
 	   });
 	});
 	
-	$('.corners').addClass('ui-corner-all');
-	$('.content').addClass('ui-widget ui-corner-all ui-widget-content');
-	$('.general').addClass('ui-widget-content');
+	$('.corners').addClass('ui-corner-all'); // селекторы с '#' в начале - это селекторы по id элементам 
+	$('.content').addClass('ui-widget ui-corner-all ui-widget-content'); // а с '.' - по классам
+	$('.general').addClass('ui-widget-content'); // такие вот css селекторы [http://api.jquery.com/category/selectors/]
 });

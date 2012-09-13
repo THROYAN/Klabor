@@ -3,7 +3,7 @@
 #options, #footer, #footer #player-games,
 #menu, #game-demo {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: top;	
 }
 
 /*div {
@@ -33,7 +33,7 @@
 		max-height: 120px;
 	}
 	#logo {
-		width: 549px;
+		width: 548px;
 		text-align: left;
 	}
 	#logo-text {
